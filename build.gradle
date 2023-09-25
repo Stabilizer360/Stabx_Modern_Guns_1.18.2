@@ -11,7 +11,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = "6.1"
+version = "6.3"
 group = "com.stabilizerking.stabxmodernguns"
 archivesBaseName = "Stabx_Modern_Guns"
 
