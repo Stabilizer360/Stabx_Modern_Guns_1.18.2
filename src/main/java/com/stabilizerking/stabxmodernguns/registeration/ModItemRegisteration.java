@@ -3,6 +3,7 @@ package com.stabilizerking.stabxmodernguns.registeration;
 
 import com.mrcrayfish.guns.item.attachment.impl.Scope;
 import com.stabilizerking.stabxmodernguns.StabxModernGuns;
+import com.stabilizerking.stabxmodernguns.common.ScopeProperties;
 import com.stabilizerking.stabxmodernguns.item.M1GrandeGunItem;
 import com.mrcrayfish.guns.common.GunModifiers;
 import com.mrcrayfish.guns.item.*;
@@ -122,6 +123,12 @@ public class ModItemRegisteration {
     public static final RegistryObject<GunItem> NZ41= ITEMS.register("nz41",
             () -> new GunItem(new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_ASSAULT_RIFLES)));
 
+    public static final RegistryObject<GunItem> AZ67 = ITEMS.register("az67",
+            () -> new GunItem(new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_ASSAULT_RIFLES)));
+
+    public static final RegistryObject<GunItem> AK_103= ITEMS.register("ak_103",
+            () -> new GunItem(new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_ASSAULT_RIFLES)));
+
 
 
 
@@ -209,26 +216,28 @@ public class ModItemRegisteration {
 
     //---------------------------------------Guns Attachments / Sight Scope Attachments ---------------------------------------------------------------//
 
-    public static final RegistryObject<ScopeItem> ZA_MINI_RED_DOT_SIGHT = ITEMS.register("za_mini_red_dot_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(), new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
     public static final RegistryObject<ScopeItem> RED_DOT_SIGHT = ITEMS.register("red_dot_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(),new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(Scope.builder().build(),new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+
+    public static final RegistryObject<ScopeItem> ZA_MINI_RED_DOT_SIGHT = ITEMS.register("za_mini_red_dot_sight",
+            () -> new ScopeItem(ScopeProperties.ZA_MINI_SIGHT, new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+
 
     public static final RegistryObject<ScopeItem> HOLOGRAPHIC_SIGHT = ITEMS.register("holographic_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(),new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(ScopeProperties.HOLOGRAPHIC_SIGHT,new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
     public static final RegistryObject<ScopeItem> MINI_SIGHT = ITEMS.register("mini_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(), new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(ScopeProperties.MINI_SIGHT, new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
     public static final RegistryObject<ScopeItem> KOBRA_SIGHT = ITEMS.register("kobra_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(), new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(ScopeProperties.KOBRA_SIGHT, new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
     public static final RegistryObject<ScopeItem> ACOG_SIGHT = ITEMS.register("acog_sight",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(), new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(ScopeProperties.ACOG_SIGHT, new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
     public static final RegistryObject<ScopeItem> SIMPLE_SNIPER_SCOPE = ITEMS.register("simple_sniper_scope",
-            () -> new ScopeItem(Scope.builder().modifiers(GunModifiers.SLOW_ADS).build(), new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
+            () -> new ScopeItem(ScopeProperties.SIMPLE_SNIPER_SCOPE, new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_MICS)));
 
 
     //---------------------------------------------------- Stock Attachments ---------------------------------------------------------------//
