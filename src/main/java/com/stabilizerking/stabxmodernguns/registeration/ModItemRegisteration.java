@@ -129,6 +129,8 @@ public class ModItemRegisteration {
     public static final RegistryObject<GunItem> AK_103= ITEMS.register("ak_103",
             () -> new GunItem(new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_ASSAULT_RIFLES)));
 
+    public static final RegistryObject<GunItem> RATNIK19= ITEMS.register("ratnik19",
+            () -> new GunItem(new Item.Properties().stacksTo(1).tab(StabxCreativeModeTab.STABX_ASSAULT_RIFLES)));
 
 
 

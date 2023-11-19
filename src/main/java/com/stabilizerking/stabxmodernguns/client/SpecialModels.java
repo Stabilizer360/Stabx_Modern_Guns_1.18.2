@@ -228,7 +228,17 @@ public enum SpecialModels {
 
     AZ67("gun/az67"),
     AZ67_IRONSIGHTS("gun/az67_ironsights"),
-    AZ67_IRONSIGHTS_MOUNT("gun/az67_ironsights_mount");
+    AZ67_IRONSIGHTS_MOUNT("gun/az67_ironsights_mount"),
+
+
+
+    RATNIK19("gun/ratnik19"),
+    RATNIK19_CHARGING_HANDLE("gun/ratnik19_charging_handle"),
+    RATIK19_ANGLED_GRIP("gun/ratnik19_angled_grip"),
+    RATIK19_MUZZLE_DEFAULT("gun/ratnik19_default_muzzle"),
+    RATIK19_SUPPRESSOR("gun/ratnik19_suppressor"),
+    RATIK19_VERTICAL_FOREGRIP("gun/ratnik19_vertical_foregrip"),
+    RATIK19_SKELETON_FOREGRIP("gun/ratnik19_skeleton_grip");
 
 
 
